@@ -6,6 +6,7 @@ fn main() {
 
     let num_items = get_i32("Number of items: ");
     let max = get_i32("Maximum value: ");
+    println!("");
 
     let mut my_vec = make_random_vec(num_items, max);
     // print!("original, unsorted vec =");
@@ -13,7 +14,7 @@ fn main() {
 
     bubble_sort(&mut my_vec);
 
-    // print!("updated,  sorted   vec =");
+    // println!("updated,  sorted   vec =");
     print_vec(&my_vec, num_items);
     
     check_sorted(&my_vec);
